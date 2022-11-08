@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register form</title>
+
+    <!--- custom css file link ----->
+    <link rel="stylesheet" href="loginstyle.css">
+    <style>
+.form-container{
+	min height: 100vh;
+	padding: 20px;
+    padding-bottom:60px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(pexels-min-an-1171585.jpg);
+	background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;
+}
+.footer {
+  text-align: center;
+  padding: 40px;
+  background-color: rgb(32, 27, 27);
+  color: white;
+  font-size: 10px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="form-container">
+ 
+
+<form action="registerStaff.php" method="post">
+<h3 align="center" >Register<br>
+<img class="logo1" src="pakmatlogo-removebg-preview.png"></h3>
+    
+    <label class="label" for="name"> Name:</label>
+   <input id = "name" type="text" name="name" size="30" maxlength="150"/>
+
+    <label class="label" for="phone_no"> Telephone Number:</label>
+    <input type="tel" id = "phone_no"  name="phone_no" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{7}" /></p>
+    
+
+    <label class="label" for="email"> Email:</label>
+    <input id = "email" type="email" name="email" size="30" maxlength="150"/><br><br>
+
+    <label class="label" for="password"> Password:</label>
+    <input id = "password" type="password" name="password" size="12" maxlength="12"/>
+
+
+    <p><input id="reset" type="reset" name="reset" value="Clear All" />
+        <button onClick="document.location='loginpakmat.html'" type="button" class="btn">REGISTER</button>
+        </p>
+    <p>already have an account? <a href="loginpakmat.html">LOGIN NOW</a></p>
+</form>
+
+
+</div>
+<footer class="footer">
+    <p>© 2022 PAK MAT WESTERN SDN. BHD. SSM : (1265085-D) | All rights reserved</p>
+  </footer>
+</body>
+</html>

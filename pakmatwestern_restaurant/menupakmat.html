@@ -1,0 +1,161 @@
+<html>
+<head>
+     <title>Pak Mat Western Restaurant</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1" />
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {
+    background-color: #096;
+}
+.hero{
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(pexels-min-an-1171585.jpg);
+	background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;
+}
+h1 {
+    font-size: 20px;
+}
+.footer {
+  text-align: center;
+  padding: 40px;
+  background-color: rgb(32, 27, 27);
+  color: white;
+  font-size: 10px;
+}
+
+</style>
+     
+</head>
+<body>
+    <div class="hero">
+    <div class="nav-bar">
+       <div class="nav-logo">
+          <img src="pakmatlogo-removebg-preview.png">
+      </div>
+              <div class="nav-links" id="nav-links">
+              <ul>
+                  <a href="homepakmat.html"><li>HOME</li></a>
+                  <a href="aboutpakmat.html"><li>ABOUT</li></a>
+                  <a href="menupakmat.html"><li>MENU</li>
+                  <a href="productpakmat.html"><li>PRODUCT</li>
+                  <a href="contactpakmat.html"><li>CONTACT</li></a>
+
+             </ul>
+             <button onClick="document.location='loginpakmat.html'" type="button" class="btn">LOGIN</button>
+          </div>
+          </div>
+          <div class="w3-container  w3-padding-64 w3-xxsmall" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo w3-grey " style="margin-bottom:20px">SPECIAL FROM PAK MAT</h1>
+    <div class="w3-row w3-center w3-border w3-border-white">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Main Course');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-small w3-hover-grey w3-text-white">Main Course</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Chef Recomended');">
+        <div class="w3-col s4 tablink w3-padding-small w3-hover-grey w3-text-white">Chef Recomended</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Appetizer');">
+        <div class="w3-col s4 tablink w3-padding-small w3-hover-grey w3-text-white">Appetizer</div>
+      </a>
+    </div>
+
+    <div id="Main Course" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Chicken Chop</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM9.90</span></h1>
+      <p class="w3-text-grey">Chicken Chop, Fries, Mashed potato and Special sauce</p>
+      <hr>
+   
+      <h1><b>Lamb Chop</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM13.90</span></h1>
+      <p class="w3-text-grey">Lamb Chop, Fries, Mashed potato and Special sauce</p>
+      <hr>
+      
+      <h1><b>Lamb Chop Cheezy</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM20.90</span></h1>
+      <p class="w3-text-grey">Lamb Chop with special cheese sauce, Fries, Mashed potato</p>
+      <hr>
+
+      <h1><b>Homemade Meatball</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM13.90</span></h1>
+      <p class="w3-text-grey">Meatball with Blackpeper sauce </p>
+      <hr>
+
+      <h1><b>Nasi Kambing</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">RM10.90</span></h1>
+      <p class="w3-text-grey">Smokey lamb with rice and curry</p>
+      <hr>
+
+      <h1><b>Double Cheese Chicken Grill</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">RM11.90</span></h1>
+      <p class="w3-text-grey">Smokey Chicken Grill with Special Cheese Sauce</p>
+    </div>
+
+    <div id="Chef Recomended" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Mix Grilled</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">RM22.90</span></h1>
+      <p class="w3-text-grey">Lamb + Chicken + Beef Grilled with Special Barbeque Sauce</p>
+      <hr>
+   
+      <h1><b>Mix Platter</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM24.90</span></h1>
+      <p class="w3-text-grey">Lamb, Sausage, Meatball with Coleslaw and Blackpeper Sauce</p>
+      <hr>
+      
+      <h1><b>Lamb Chop Cheese with Garlic Bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM21.90</span></h1>
+      <p class="w3-text-grey">Lamb chop with Special Cheezy sauce and Garlic bread</p>
+      <hr>
+
+      <h1><b>Spaghetti Nopalitano</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM17.90</span></h1>
+      <p class="w3-text-grey">Shrimp and Spaghetti with garlic</p>
+    </div>
+
+
+    <div id="Appetizer" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Fish Fillet</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">RM10.90</span></h1>
+      <p class="w3-text-grey">Smokey fried Dory Fish with Chili Sauce</p>
+      <hr>
+   
+      <h1><b>Tempura Calamari Ring</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM7.90</span></h1>
+      <p class="w3-text-grey">Tempura with Calamari seasoning</p>
+      <hr>
+      
+      <h1><b>Mushroom Soup with Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM5.90</span></h1>
+      <p class="w3-text-grey">Mushroom Soup, garlic butter, onions</p>
+      <hr>
+      
+      <h1><b>Salt & Pepper Squid</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM12.90</span></h1>
+      <p class="w3-text-grey">Squid with Pepper and Salt seasoning</p>
+    </div><br>
+
+  </div>
+</div>
+
+
+    </div>
+
+    <footer class="footer">
+      <p>© 2022 PAK MAT WESTERN SDN. BHD. SSM : (1265085-D) | All rights reserved</p>
+    </footer>
+    
+    <script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
